@@ -8,9 +8,9 @@ export default function ThemeToggle() {
       className="theme-toggle"
       onClick={toggleTheme}
       aria-label={`Cambiar a tema ${theme === 'light' ? 'oscuro' : 'claro'}`}
+      title={`Modo ${theme === 'light' ? 'oscuro' : 'claro'}`}
     >
       {theme === 'light' ? '🌙' : '☀️'}
-      <span>{theme === 'light' ? 'Modo Oscuro' : 'Modo Claro'}</span>
     </button>
   )
 }

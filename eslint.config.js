@@ -1,3 +1,4 @@
+// eslint.config.js
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
@@ -29,6 +30,13 @@ export default [
         { allowConstantExport: true },
       ],
       'react-hooks/exhaustive-deps': 'warn',
+    },
+  },
+
+  {
+    files: ['src/contexts/*.jsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
     },
   },
 ]
